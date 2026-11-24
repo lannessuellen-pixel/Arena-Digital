@@ -1,0 +1,92 @@
+body {
+    background-image: url('imagens/logoArena2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    color:rgb(252, 252, 252);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.7);
+    font-size: 28px;
+    text-align: center;
+}
+
+ul{
+    color:#e6e0e0;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0, 0.7);
+    font-size: 18px;
+    text-align: left;
+}
+
+.foto-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-sobreposto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    
+    /* links lado a lado - configurações de layout (flex)*/
+    display: flex;
+    gap: 15px;
+}
+
+.menu-sobreposto a {
+    /*Estilo visuais dos botões*/
+    color:  #e6e0e0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    transition: color 0.3s;
+    text-shadow: 1px rgba(204, 200, 200, 0.8);
+}
+
+/*Escure ao passar o mouse*/
+.menu-sobreposto a:hover {
+    color:#d5edf1 !important;
+    text-shadow: none;
+}
+
+/*impede que mude de cor depois de clicado*/
+.menu-sobreposto a:visited {
+    color:#e6e0e0;
+}
+
+.container-formulario {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-formulario iframe {
+    width: 100%;
+    height: 900px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
+}
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    color: white;
+    background-color: rgba(0, 0, 0, 0, 0.5);
+}
