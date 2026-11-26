@@ -1,13 +1,29 @@
 body {
-    background-image: url('imagens/logoArena2.jpg');
+    background-image: url('imagens/logoarena3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-size: contain;
+        background-color: #0d1117;
+        background-attachment: scroll;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    ul{
+        font-size: 14px;
+    }
 }
 
 h1 {
